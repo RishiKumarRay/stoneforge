@@ -10,6 +10,7 @@ A tutorial exercise about loading well log datasets
 
 import las2 # local las2 read
 import numpy as np
+import stoneforge
 import  stoneforge.petrophysics.shale_volume as svsh
 
 lasfile = las2.read('../datasets/DP1.las')
@@ -66,7 +67,7 @@ for j in c_DATA:
 #====================================================================================#
 ### testing some function
 
-c_DATA["VSH"] = stf.petrophysics.shale_volume.vshale_larionov(
+c_DATA["VSH"] = stoneforge.petrophysics.shale_volume.vshale_larionov(
     c_DATA["GR"],
     np.min(c_DATA["GR"]),
     np.max(c_DATA["GR"]),
