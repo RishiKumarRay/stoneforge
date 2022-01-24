@@ -10,9 +10,9 @@ setup(
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
-    python_requires='==3.8.8',
+    python_requires='>=3.8.8',
     install_requires=[
-        "numpy==1.20.0",
-        "pytest==6.2.2",
+        "numpy>=1.20.0, <=1.25.0",
+        "pytest<=6.2.2",
     ],
 )
